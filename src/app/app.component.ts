@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title;
-  desc;
+  description;
   private dbPath = '/todos';
   todos: Observable<any>;
 
@@ -24,6 +24,6 @@ export class AppComponent implements OnInit {
   save() {
     this.db.database
       .ref(this.dbPath)
-      .push({ title: this.title, description: this.desc });
+      .push({ title: this.title, description: this.description });
   }
 }
