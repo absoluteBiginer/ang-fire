@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    //  this.data = getDatabase();
     this.todos.subscribe((val) => console.log(val));
   }
   save() {
